@@ -27,7 +27,7 @@ This project is a simple web-based application for student registration and logi
 This project is developed for learning web development basics, authentication flow, and backend integration.
 
 ## 👨‍💻 Author
-Your Name
+Manasa
 
 ## 📌 Note
 This is a beginner-level project created for practice and academic purposes.
