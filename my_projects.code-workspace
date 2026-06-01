@@ -1,0 +1,14 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../login_project"
+		},
+		{
+			"path": "../Student_Registration"
+		}
+	],
+    "settings": {}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px
+rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2>Login</h2>
+
+        {% if error %}
+        <p style="color:red;">{{ error }}</p>
+        {% endif %}
+
+        <form action="/authenticate" method="POST">
+
+            <input type="text" name="username" placeholder="Enter User ID" required>
+
+            <input type="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
